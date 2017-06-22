@@ -2,18 +2,21 @@ body {
 }
 
 .container {
-  margin: 5rem 0 0 5rem;
-  border: 1px solid gray;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .title {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  margin-top: 8rem;
+  margin-left: 2rem;
 }
 
 .pattern {
-  border: 1px solid red;
+  display: flex;
+  margin: 0;
 }
 
 .title-name {
@@ -21,7 +24,7 @@ body {
   font-size: 6rem;
   color: #dbd9d4;
   margin: 0 1rem 0 0;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
 
 .social-media {
@@ -56,7 +59,20 @@ a:hover {
 }
 
 .asterisk {
-  display: flex;
   font-size: 20rem;
   color: #f5883b;
+  animation-name: spin-asterisk;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin-asterisk {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+
 }
